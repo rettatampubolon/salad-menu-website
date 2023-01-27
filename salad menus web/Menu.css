@@ -1,0 +1,266 @@
+:root{
+    --red: #DC143C;
+    background-color: #f2f2f2;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-decoration: capitalize;
+    transition: .5s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+header{
+    position: relative;
+    top: 0; left: 0; right: 0;
+    background-color: white;
+    padding: 0.01rem 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+}
+
+header .logo{
+    font-size: x-large;
+    color: var(--red);
+    font-weight: bolder;
+}
+
+header .logo span{
+    font-size: x-large;
+    color:black;
+    font-weight: bold;
+}
+
+header .navbar {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size:medium;
+    position: relative;
+    word-spacing: 30%;
+    color: black;
+}
+.button {
+    background-color: var(--red);
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-display: Helvetica;
+  }
+.button:hover{
+    background: black;
+}
+header .navbar a:hover{
+    color: var(--red);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://i0.wp.com/flavorfulife.com/wp-content/uploads/2021/11/Chicken-caesar-salad-landscape.jpg?fit=2000%2C1333&ssl=1) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*home section*/
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h2{
+    font-size: 5rem;
+    color: white;
+}
+
+.home .content i{
+    font-size: 3rem;
+    color:white;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.9rem;
+    color: #f2f2f2;;
+    padding:1.5rem 0;
+    line-height: 2;
+}
+
+.home .slidedown {
+    font-size: 1.5rem;
+    color:var(--red)
+}
+
+.home .slidedown {
+    border: none;
+    border-radius: 25px;
+    padding: 15px 32px;
+    background: var(--red);
+    color: white;
+}
+
+.home .slidedown:hover{
+    background: black;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    color:black;
+    padding:1rem;
+    margin:2rem 0;
+    background: #ff8ea4
+}
+
+.list .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.list .box-container .box{
+    flex: 30rem;
+    flex-direction: column;
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
+    border-radius: 2rem;
+    border:.01rem solid rgba(0,0,0,.1);
+    position: relative;    
+}
+
+.list .box-container .box .image img{
+    height: 300px;
+}
+
+.list .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.list .box-container .box:hover .image .icons{
+    bottom: 2px;
+}
+
+/*menu list*/
+.menu .recipes{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.menu .recipeName {
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: var(--red);
+}
+
+.menu .ingredients h2{
+    font-size: 2rem;
+    color: var(--red);
+}
+
+.menu .ingredients ul{
+    font-size: large;
+    padding: 2rem;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.menu .steps h2{
+    font-size: 2rem;
+    color: var(--red);
+}
+
+.menu .steps ol{
+    font-size: large;
+    padding: 4rem;
+}
+
+.menu .steps p{
+    font-size: large;
+}
+
+.menu img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.buttonhome{
+    background-color: var(--red);
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-display: Helvetica;
+    margin-top: 30px;
+}
+
+.buttonhome:hover{
+    background-color: black;
+}
+
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header{
+        display: block;
+    }
+    header{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+}
